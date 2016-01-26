@@ -1,5 +1,6 @@
 require 'sinatra'
+require 'json'
 
-get '/' do
-  "Hello Human!"
+post '/gateway' do
+  {text: "Hello Human!"}.to_json
 end
