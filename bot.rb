@@ -14,9 +14,14 @@ post '/gateway' do
     client[:standup].insert_one({ name: params[:user_name], text: params[:text].gsub(params[:trigger_word], '') })
     { text: 'Well done!' }.to_json
   elsif params[:trigger_word] == 'standup?'
-    result = client[:standup].find(name: params[:user_name]).each do |info|
-       info.to_json
+    result = []
+    result << client[:standup].find().each do |info|
+       info
     end
-    { text: result.first['text'] }.to_json
+    text = ''
+    result.first.each do |res|
+      text << "#{res['name']}: #{res['text']}\n"
+    end
+    { text: text }.to_json
   end
 end
