@@ -20,7 +20,7 @@ post '/gateway' do
     end
     text = ''
     result.first.each do |res|
-      text << "#{res['name']}: #{res['text']}\n"
+      text << "#{res['name']}: #{res['text']}\n\n\n"
     end
     { text: text }.to_json
   end
