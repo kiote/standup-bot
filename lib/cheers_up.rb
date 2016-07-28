@@ -15,7 +15,13 @@ class CheersUp
       'Well, could be worse',
       'Okay, let\'s hope tomorrow will be better than that!',
       'Are you serious?',
-      'Not your best day, huh?'
+      'Not your best day, huh?',
+      'I can\'t blame you for that.',
+      'God I\'m so depressed.',
+      'I\'d give you advice, but you wouldn\'t listen. No one ever does.',
+      'I\'ve seen it. It\'s rubbish.',
+      'Here I am, brain the size of a planet and they ask me to make notes. Call that job satisfaction?',
+      'Sounds awful.'
     ]
 
     { text: "Got it!\n#{greets.sample}" }
