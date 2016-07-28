@@ -4,7 +4,7 @@ class MongoClient
   attr_reader = :client
 
   def initialize(params)
-    @client = Mongo::Client.new(ENV['MONGOLAB_URI'])
+    @client = Mongo::Client.new(ENV['MONGODB_URI'])
     @params = params
   end
 
