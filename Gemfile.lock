@@ -5,6 +5,7 @@ GEM
     bson_ext (1.5.1)
     mongo (2.2.2)
       bson (~> 4.0)
+    puma (3.6.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -20,6 +21,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   mongo (~> 2.1)
+  puma
   sinatra
 
 BUNDLED WITH
